@@ -1,4 +1,6 @@
 
-public interface Crackable {
-    OpenSeam crack();
+public interface Crackable extends DurableSquirrelFood {
+
+	void crack();
+
 }

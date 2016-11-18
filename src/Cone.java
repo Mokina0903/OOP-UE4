@@ -1,13 +1,34 @@
 
-//enthaelt mehrere Samen
-public class Cone implements Crackable, Burryable{
-    @Override
-    public OpenSeam crack() {
-        return null;
-    }
+public class Cone extends Fruit implements Crackable {
 
-    @Override
-    public void toBeBurried() {
+	@Override
+	public int eatWithinDays() {
+		return 0;
+	}
 
-    }
+	@Override
+	public double carb() {
+		return 0;
+	}
+
+	@Override
+	public double fat() {
+		return 0;
+	}
+
+	@Override
+	public double protein() {
+		return 0;
+	}
+
+	@Override
+	public void crack() {
+
+	}
+
+	@Override
+	public boolean toBeBuried() {
+		return true;
+	}
+
 }

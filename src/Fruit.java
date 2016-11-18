@@ -1,32 +1,8 @@
 
-public  abstract class Fruit extends Food {
+public abstract class Fruit {
 
+	protected double carb;
+	protected double fat;
+	protected double protein;
 
-    @Override
-    public int eatWithinDays() {
-        return 0;
-    }
-
-    @Override
-    public double carb() {
-        return 0;
-    }
-
-    @Override
-    public double fat() {
-        return 0;
-    }
-
-    @Override
-    public double protein() {
-        return 0;
-    }
-
-    public int fromMonth(){
-        return 0;
-    }
-
-    public int toMonth(){
-        return 0;
-    }
 }

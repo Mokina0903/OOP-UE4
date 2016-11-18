@@ -1,22 +1,4 @@
 
-public class VegetarianSquirrelFood implements SquirrelFood {
-    @Override
-    public int eatWithinDays() {
-        return 0;
-    }
+public interface VegetarianSquirrelFood extends SquirrelFood {
 
-    @Override
-    public double carb() {
-        return 0;
-    }
-
-    @Override
-    public double fat() {
-        return 0;
-    }
-
-    @Override
-    public double protein() {
-        return 0;
-    }
 }
