@@ -1,6 +1,12 @@
 
 public class OpenSeam extends Fruit implements DurableSquirrelFood {
 
+	public OpenSeam(Fruit fruit) {
+		this.carb = fruit.carb*4;
+		this.fat = fruit.carb*3;
+		this.protein = fruit.protein*3;
+	}
+
 	@Override
 	public int eatWithinDays() {
 		return 0;
@@ -8,17 +14,17 @@ public class OpenSeam extends Fruit implements DurableSquirrelFood {
 
 	@Override
 	public double carb() {
-		return 0;
+		return carb;
 	}
 
 	@Override
 	public double fat() {
-		return 0;
+		return fat;
 	}
 
 	@Override
 	public double protein() {
-		return 0;
+		return protein;
 	}
 
 	@Override

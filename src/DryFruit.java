@@ -2,9 +2,9 @@
 public class DryFruit extends Fruit implements DurableSquirrelFood {
 
 	public DryFruit(FreshFruit f) {
-		this.carb = f.carb;
-		this.fat = f.fat;
-		this.protein = f.protein;
+		this.carb = f.carb*3;
+		this.fat = f.fat*3;
+		this.protein = f.protein*3;
 	}
 
 	public boolean toBeBuried() {

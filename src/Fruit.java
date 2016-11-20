@@ -5,6 +5,6 @@ public abstract class Fruit {
 	protected double fat;
 	protected double protein;
 
-        public String toString() { return "carb: " + carb + " fat: " + fat + " protein: " + protein; }
+        public String toString() { return "carb: " + carb + "g, + fat: " + fat + "g, protein: " + protein + "g"; }
 
 }

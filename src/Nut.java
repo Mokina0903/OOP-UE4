@@ -8,7 +8,8 @@ public class Nut extends Fruit implements Crackable {
 	}
 
 	@Override
-	public void crack() {
+	public OpenSeam crack() {
+		return new OpenSeam(this);
 
 	}
 
