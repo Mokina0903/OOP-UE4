@@ -11,9 +11,11 @@ public class DryFruit extends Fruit implements DurableSquirrelFood {
 		return false;
 	}
 
+	public String toString() { return "Dry Fruit: " + super.toString(); }
+
 	@Override
 	public int eatWithinDays() {
-		return 0;
+		return 60;
 	}
 
 	@Override

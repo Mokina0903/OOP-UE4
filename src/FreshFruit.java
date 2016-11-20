@@ -1,14 +1,19 @@
 
 public class FreshFruit extends Fruit implements PerishableSquirrelFood {
 
+	public FreshFruit() { this.protein = 8; this.carb = 15; this.fat = 5; }
+
+	public String toString() { return "Fresh Fruit: " + super.toString(); }
+
+
 	@Override
 	public int eatWithinDays() {
-		return 0;
+		return 5;
 	}
 
 	@Override
 	public double carb() {
-		return 0;
+		return 30;
 	}
 
 	@Override
@@ -22,8 +27,7 @@ public class FreshFruit extends Fruit implements PerishableSquirrelFood {
 	}
 
 	public DryFruit dry() {
-		DryFruit dried = new DryFruit(this);
-		return dried;
+		return new DryFruit(this);
 	}
 
 }

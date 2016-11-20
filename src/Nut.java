@@ -1,10 +1,10 @@
 
-public class Nut extends Fruit implements Crackable {
+public class Nut extends Fruit implements Crackable, DurableSquirrelFood {
 
 	public Nut() {
-		fat = 0.3;
-		carb = 0.5;
-		protein = 0.2;
+		fat = 20;
+		carb = 10;
+		protein = 20;
 	}
 
 	@Override
@@ -13,9 +13,11 @@ public class Nut extends Fruit implements Crackable {
 
 	}
 
+	public String toString() { return "Nut: " + super.toString(); }
+
 	@Override
 	public int eatWithinDays() {
-		return 0;
+		return 90;
 	}
 
 	@Override
