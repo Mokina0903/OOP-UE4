@@ -1,7 +1,18 @@
-/**
- * Created by i on 20/11/16.
- */
+
+
+
 public class Test {
+
+    /*
+    Aufgabe 4
+    Arbeitsaufteilung:
+    - Struktur, Klassen, Beziehungen, Typen, Methoden und Variablen anlegen: ganze Gruppe
+    - Sonstiges:
+    Isabel:
+    Monika:
+    Samuel:
+
+    */
 
     public static void main(String[] args) {
         Nut nut = new Nut();

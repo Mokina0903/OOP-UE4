@@ -22,17 +22,17 @@ public class Nut extends Fruit implements Crackable, DurableSquirrelFood {
 
 	@Override
 	public double carb() {
-		return 0;
+		return this.carb;
 	}
 
 	@Override
 	public double fat() {
-		return 0;
+		return this.fat;
 	}
 
 	@Override
 	public double protein() {
-		return 0;
+		return this.protein;
 	}
 
 	@Override
