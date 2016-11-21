@@ -1,16 +1,25 @@
 
+
+
+//TODO: Art des Samens bestimmt, ob Samen vergraben werden kann. 2 Verschiedene Untertypen (verwendet super.Openseam()?)??
+
 public class OpenSeam extends Fruit implements DurableSquirrelFood {
 
-	private int seams;
-
+	//for crackable() Fruits
 	public OpenSeam(Fruit fruit) {
-		int factor = (fruit instanceof Cone ? 2 : 1);
-			this.carb = fruit.carb * factor;
-			this.fat = fruit.fat * factor;
-			this.protein = fruit.protein * factor;
-			this.eatWithinDays = (fruit).eatWithinDays();
+		int factor = (fruit instanceof Cone ? 2 : 1); //cracked cones contain a higher fraction of ingredients than uncracked cones
+		this.carb = fruit.carb * factor;
+		this.fat = fruit.fat * factor;
+		this.protein = fruit.protein * factor;
+		this.eatWithinDays = (int)(fruit.eatWithinDays() * factor*0.5);	//cracked nuts must be eaten earlier than uncracked nuts. eatwithindays for cones stays the same.
+	}
 
-			this.eatWithinDays = (int) ((fruit).eatWithinDays() * (factor/2));
+
+	public OpenSeam() {
+		fat = 20;
+		carb = 20;
+		protein = 25;
+		this.eatWithinDays = 90;
 	}
 
 	public String toString() { return "Open Seam: " + super.toString(); }

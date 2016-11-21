@@ -15,7 +15,7 @@ public class DryFruit extends Fruit implements DurableSquirrelFood {
 
 	@Override
 	public int eatWithinDays() {
-		return 60;
+		return 90;
 	}
 
 	@Override

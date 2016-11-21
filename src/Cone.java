@@ -8,7 +8,7 @@ public class Cone extends Fruit implements Crackable {
 
 	@Override
 	public int eatWithinDays() {
-		return 0;
+		return 30;
 	}
 
 	@Override
@@ -45,4 +45,6 @@ public class Cone extends Fruit implements Crackable {
 		return this.seams;
 
 	}
+
+
 }
