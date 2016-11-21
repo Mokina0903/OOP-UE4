@@ -19,7 +19,6 @@ public class Test {
         System.out.println(nut);
         OpenSeam crackedNut = nut.crack();
         System.out.println(crackedNut);
-
         FreshFruit freshFruit = new FreshFruit();
         System.out.println(freshFruit);
         DryFruit dryFruit = freshFruit.dry();
