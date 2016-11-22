@@ -18,7 +18,6 @@ public abstract class Fruit implements VegetarianSquirrelFood {
 		return toMonth;
 	}
 
-
-        public String toString() { return "carb: " + carb + "%, fat: " + fat + "%, protein: " + protein + "%, eat within " + eatWithinDays() + " days";}
+    public String toString() { return "carb: " + carb + "%, fat: " + fat + "%, protein: " + protein + "%, eat within " + eatWithinDays() + " days";}
 
 }

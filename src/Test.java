@@ -8,7 +8,7 @@ public class Test {
     Arbeitsaufteilung:
     - Struktur, Klassen, Beziehungen, Typen, Methoden und Variablen anlegen: ganze Gruppe
     - Sonstiges:
-    Isabel:
+    Isabel: toString(), Konstruktoren, crack(), dry(), Inhaltsstoffe
     Monika:
     Samuel:
 
@@ -31,10 +31,10 @@ public class Test {
         Nut nut = new Nut();
         System.out.println(nut.fromMonth() + " - " + nut.toMonth);
         System.out.println(nut);
-        System.out.println("Vergraben? " + nut.toBeBuried());
+        System.out.println("Buried? " + nut.toBeBuried());
         OpenSeam crackedNut = nut.crack();
         System.out.println(crackedNut.fromMonth() + " - " + crackedNut.toMonth);
-        System.out.println("Vergraben? " + crackedNut.toBeBuried());
+        System.out.println("Buried? " + crackedNut.toBeBuried());
         System.out.println(crackedNut);
         FreshFruit freshFruit = new FreshFruit();
         System.out.println(freshFruit);
@@ -42,8 +42,9 @@ public class Test {
         System.out.println(dryFruit);
         Cone cone = new Cone();
         System.out.println(cone);
-        System.out.println(cone.seams());
+        System.out.println("seams: " + cone.seams());
         System.out.println(cone.crack());
+        System.out.println("seams: " + cone.seams());
 
     }
 }

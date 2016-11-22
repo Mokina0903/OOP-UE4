@@ -4,7 +4,7 @@ public class FreshFruit extends Fruit implements PerishableSquirrelFood {
 	//carb, protein und fat >= 0 && < Integer.MAX_Value;
 	public FreshFruit() { this.protein = 8; this.carb = 15; this.fat = 5; }
 
-	public String toString() { return "Fresh Fruit: " + super.toString(); }
+	public String toString() { return "Fresh Fruit: " + super.toString() + ", from " + fromMonth() + " to " + toMonth(); }
 
 
 	@Override

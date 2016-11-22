@@ -14,17 +14,17 @@ public class Cone extends Fruit implements Crackable {
 
 	@Override
 	public double carb() {
-		return 0;
+		return this.carb;
 	}
 
 	@Override
 	public double fat() {
-		return 0;
+		return this.fat;
 	}
 
 	@Override
 	public double protein() {
-		return 0;
+		return this.protein;
 	}
 
 	//einzelne Samen werden auf dem Zapfen geholt
@@ -37,7 +37,7 @@ public class Cone extends Fruit implements Crackable {
 		return new OpenSeam(this);
 	}
 
-	public String toString() { return "Cone: " + super.toString(); }
+	public String toString() { return "Cone: " + super.toString() + ", from " + fromMonth() + " to " + toMonth(); }
 
 	@Override
 	public boolean toBeBuried() {
@@ -49,5 +49,13 @@ public class Cone extends Fruit implements Crackable {
 
 	}
 
+	@Override
+	int fromMonth() {
+		return 11;
+	}
 
+	@Override
+	int toMonth() {
+		return 1;
+	}
 }

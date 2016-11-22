@@ -16,7 +16,7 @@ public class Nut extends Fruit implements Crackable, DurableSquirrelFood {
 
 	}
 
-	public String toString() { return "Nut: " + super.toString(); }
+	public String toString() { return "Nut: " + super.toString() + ", from " + fromMonth() + " to " + toMonth(); }
 
 	@Override
 	public int eatWithinDays() {
