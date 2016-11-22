@@ -27,7 +27,7 @@ public class Cone extends Fruit implements Crackable {
 		return this.protein;
 	}
 
-	//einzelne Samen werden auf dem Zapfen geholt
+	//einzelne Samen werden aus dem Zapfen geholt
 	//seams, protein und fat >= 0 && < Integer.MAX_Value;
 	@Override
 	public OpenSeam crack() {

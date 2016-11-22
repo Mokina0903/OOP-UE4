@@ -37,7 +37,7 @@ public class FreshFruit extends Fruit implements PerishableSquirrelFood {
 		return 0;
 	}
 
-	//dry hat keinen Effekt auf bereits getrocknete Früchte
+	//dry hat keinen Effekt auf bereits getrocknete Fruechte
 	public DryFruit dry() {
 		return new DryFruit(this);
 	}

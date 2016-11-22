@@ -9,16 +9,17 @@ public class Test {
     - Struktur, Klassen, Beziehungen, Typen, Methoden und Variablen anlegen: ganze Gruppe
     - Sonstiges:
     Isabel: toString(), Konstruktoren, crack(), dry(), Inhaltsstoffe
-    Monika:
+    Monika: fromMonth(), toMonth(), Zusicherungen, Begruendung keine Untertypbeziehungen
     Samuel:
 
     Keine Untertypbeziehungen zwischen:
-        Cone, Nut und OpenSeam:
+
+      - Cone, Nut und OpenSeam:
         Die drei Klassen stehen auf einer Ebene. Nut bzw. Cone koennen durch die Methode crack() in die Klasse
         OpenSeam "ueberfuehrt" werden. Es ist keine Untertypbeziehung vorhanden, da diese keine Methoden voneinander
         erben, welche nicht bereits von Fruit vererbt werden.
 
-        FreshFruit und DryFruit:
+      - FreshFruit und DryFruit:
         Auch hier sind die Klassen auf einer Ebene anzusehen. Es besteht keine Untertypbeziehung da ein FreshFruit
         keine DryFruit ist oder umgekehrt. Es soll nur eine Freshfruit in eine Dryfruit ueberfuehrt werden.
 
