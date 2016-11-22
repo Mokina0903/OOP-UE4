@@ -13,6 +13,16 @@ public class FreshFruit extends Fruit implements PerishableSquirrelFood {
 	}
 
 	@Override
+	int fromMonth() {
+		return 3;
+	}
+
+	@Override
+	int toMonth() {
+		return 7;
+	}
+
+	@Override
 	public double carb() {
 		return 30;
 	}

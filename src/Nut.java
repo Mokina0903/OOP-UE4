@@ -6,6 +6,8 @@ public class Nut extends Fruit implements Crackable, DurableSquirrelFood {
 		fat = 20;
 		carb = 10;
 		protein = 20;
+		fromMonth = 7;
+		toMonth = 11;
 	}
 
 	@Override

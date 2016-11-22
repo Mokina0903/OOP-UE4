@@ -27,6 +27,22 @@ public class OpenSeam extends Fruit implements DurableSquirrelFood {
 		this.eatWithinDays = 90;
 	}
 
+	@Override
+	int fromMonth() {
+		if (factor == 0) {
+			return 3;
+		}
+		return 0;
+	}
+
+	@Override
+	int toMonth() {
+		if (factor == 0) {
+			return 9;
+		}
+		return 0;
+	}
+
 	public String toString() { return "Open Seam: " + super.toString(); }
 
 	@Override
