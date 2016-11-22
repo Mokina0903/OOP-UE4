@@ -1,6 +1,7 @@
 
 public class FreshFruit extends Fruit implements PerishableSquirrelFood {
 
+	//carb, protein und fat >= 0 && < Integer.MAX_Value;
 	public FreshFruit() { this.protein = 8; this.carb = 15; this.fat = 5; }
 
 	public String toString() { return "Fresh Fruit: " + super.toString(); }
@@ -26,6 +27,7 @@ public class FreshFruit extends Fruit implements PerishableSquirrelFood {
 		return 0;
 	}
 
+	//dry hat keinen Effekt auf bereits getrocknete Früchte
 	public DryFruit dry() {
 		return new DryFruit(this);
 	}

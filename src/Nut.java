@@ -1,6 +1,7 @@
 
 public class Nut extends Fruit implements Crackable, DurableSquirrelFood {
 
+	//carb, protein und fat >= 0 && < Integer.MAX_Value;
 	public Nut() {
 		fat = 20;
 		carb = 10;

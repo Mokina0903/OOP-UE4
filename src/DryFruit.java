@@ -1,6 +1,7 @@
 
 public class DryFruit extends Fruit implements DurableSquirrelFood {
 
+	//FreshFruit f != null
 	public DryFruit(FreshFruit f) {
 		this.carb = f.carb*3;
 		this.fat = f.fat*3;

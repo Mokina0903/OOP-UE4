@@ -1,8 +1,9 @@
 
 public class Cone extends Fruit implements Crackable {
+
 	private int seams;
 
-
+	//carb, protein, fat und seams >= 0 && < Integer.MAX_Value;
 	public Cone() { this.carb = 15; this.protein = 10; this.fat = 3; this.seams = 10; }
 
 
@@ -26,6 +27,8 @@ public class Cone extends Fruit implements Crackable {
 		return 0;
 	}
 
+	//einzelne Samen werden auf dem Zapfen geholt
+	//seams, protein und fat >= 0 && < Integer.MAX_Value;
 	@Override
 	public OpenSeam crack() {
 		this.seams--;
@@ -38,7 +41,7 @@ public class Cone extends Fruit implements Crackable {
 
 	@Override
 	public boolean toBeBuried() {
-		return true;
+		return false;
 	}
 
 	public int seams() {

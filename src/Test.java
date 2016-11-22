@@ -30,7 +30,9 @@ public class Test {
     public static void main(String[] args) {
         Nut nut = new Nut();
         System.out.println(nut);
+        System.out.println("Vergraben? " + nut.toBeBuried());
         OpenSeam crackedNut = nut.crack();
+        System.out.println("Vergraben? " + crackedNut.toBeBuried());
         System.out.println(crackedNut);
         FreshFruit freshFruit = new FreshFruit();
         System.out.println(freshFruit);
